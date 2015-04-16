@@ -1,28 +1,20 @@
 package com.example.android.sweetmemoriesdiary;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener{
-    Button sign_in,sign_up,about_us;
+public class MainActivity extends ActionBarActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sign_in=(Button)findViewById(R.id.signIn);
-        sign_up=(Button)findViewById(R.id.SignUp);
-        about_us=(Button)findViewById(R.id.about);
-
-        sign_in.setOnClickListener(this);
-        sign_up.setOnClickListener(this);
 
     }
 
@@ -48,24 +40,20 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         return super.onOptionsItemSelected(item);
     }
-
-
-
-    @Override
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.signIn:
-                Intent intent=new Intent(this,SignIn.class);
-                startActivity(intent);
-                break;
-            case R.id.SignUp:
-                Intent intent2=new Intent(this,SignUP.class);
-                startActivity(intent2);
-                break;
-            case R.id.about:
-                break;
-
-        }
+    public void Signin(View view){
+        /*Intent intent=new Intent(this,SignIn.class);
+        startActivity(intent);*/
+        setContentView(R.layout.sign_in);
 
     }
+
+    public void signup(View view){
+       /* Intent intent=new Intent(this,SignUP.class);
+        startActivity(intent);*/
+        setContentView(R.layout.sign_up);
+
+
+    }
+
+
 }

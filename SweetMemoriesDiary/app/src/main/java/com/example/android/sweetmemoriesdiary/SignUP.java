@@ -16,7 +16,7 @@ public class SignUP extends ActionBarActivity {
     }
 
     public void Register(View view){
-        Toast toast=Toast.makeText(getApplicationContext(),"you have successfully resistered",
+        Toast toast=Toast.makeText(getApplicationContext(),"you have successfully registered",
                 Toast.LENGTH_LONG);
         toast.show();
     }
