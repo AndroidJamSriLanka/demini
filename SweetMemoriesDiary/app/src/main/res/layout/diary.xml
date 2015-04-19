@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/ll_container"
     android:background="@drawable/home">
 
     <LinearLayout
@@ -24,7 +25,7 @@
                 android:onClick="setDate"
                 android:background="@drawable/button_click"
                 android:text="Pick a date"
-                android:id="@+id/button" />
+                android:id="@+id/buttonDate" />
 
             <EditText
                 android:layout_width="200dp"
@@ -58,7 +59,7 @@
                 android:ems="10"
                 android:id="@+id/editText2"
                 android:hint="Note down your memories here"
-                android:password="true" />
+                android:password="false" />
         </LinearLayout>
 
         <LinearLayout

@@ -4,4 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="header">Hi ! Time for your memories</string>
+     <string name="para1">This app is a great way to keep track of your
+    past and think about your future. You can make predictions about what will happen
+    and see if they come true, and you can see  how you changed over time, and read over memories
+    having a few laughs.</string>
 </resources>

@@ -12,9 +12,10 @@ import java.util.Calendar;
  * Created by Demini_Indrachapa on 4/16/2015.
  */
 public class PickerDialogs extends DialogFragment {
-    DateSetting dateSettings=new DateSetting(getActivity());
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        DateSetting dateSettings=new DateSetting(getActivity());
         Calendar calendar=Calendar.getInstance();
         int year=calendar.get(Calendar.YEAR);
         int month=calendar.get(Calendar.MONTH);

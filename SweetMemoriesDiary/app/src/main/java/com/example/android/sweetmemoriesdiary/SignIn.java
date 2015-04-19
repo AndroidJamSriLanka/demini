@@ -1,5 +1,6 @@
 package com.example.android.sweetmemoriesdiary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
@@ -31,7 +32,9 @@ public class SignIn extends ActionBarActivity {
         String username = editTextUserName.getText().toString();
         String password = editTextPassword.getText().toString();
         if ("demini".equals(username) && "demini123".equals(password)) {
-            setContentView(R.layout.diary);
+            Intent intent;
+            intent = new Intent(SignIn.this,Diary.class);
+            startActivity(intent);
         } else {
             Toast.makeText(getBaseContext(), "wrong username or password", Toast.LENGTH_SHORT).show();
 
