@@ -17,6 +17,7 @@ public class SignIn extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sign_in);
+
         editTextUserName=(EditText)findViewById(R.id.editTextLoginUsername);
 
         editTextPassword=(EditText)findViewById(R.id.editTextLoginPassword);

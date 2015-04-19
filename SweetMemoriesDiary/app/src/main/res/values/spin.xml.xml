@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="themes">
+        <item>big water heart</item>
+        <item>pink bear</item>
+        <item>balloons</item>
+        <item>red rose</item>
+        <item>lovely couple</item>
+
+        </string-array>
+</resources>

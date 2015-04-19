@@ -2,9 +2,12 @@ package com.example.android.sweetmemoriesdiary;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,6 +17,34 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button b=(Button)findViewById(R.id.butSignIn);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(getApplicationContext(), "You can login now", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+                setContentView(R.layout.sign_in);
+                /*Intent intent;
+                intent = new Intent(MainActivity.this,SignIn.class);
+                startActivity(intent);*/
+            }
+        });
+
+        Button b2=(Button)findViewById(R.id.buttSignUp);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast toast=Toast.makeText(getApplicationContext(),"you can register now",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();
+               /* Intent intent;
+                intent = new Intent(MainActivity.this,SignUP.class);
+                startActivity(intent);*/
+                setContentView(R.layout.sign_up);
+            }
+        });
 
 
     }
@@ -40,20 +71,14 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void Signin(View view){
-        /*Intent intent=new Intent(this,SignIn.class);
-        startActivity(intent);*/
-        setContentView(R.layout.sign_in);
 
-    }
-
-    public void signup(View view){
-       /* Intent intent=new Intent(this,SignUP.class);
-        startActivity(intent);*/
+  /*  public void signup(View view){
+        Intent intent=new Intent(this,SignUP.class);
+        startActivity(intent);
         setContentView(R.layout.sign_up);
 
 
-    }
+    }*/
 
 
 }
