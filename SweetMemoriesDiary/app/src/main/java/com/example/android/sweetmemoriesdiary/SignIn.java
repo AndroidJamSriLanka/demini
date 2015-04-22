@@ -25,16 +25,18 @@ public class SignIn extends ActionBarActivity {
     }
 
     public void goBack(View view) {
-        setContentView(R.layout.activity_main);
+        Intent intent;
+        intent = new Intent(SignIn.this,MainActivity.class);
+        startActivity(intent);
     }
 
     public void OK(View view) {
         String username = editTextUserName.getText().toString();
         String password = editTextPassword.getText().toString();
         if ("demini".equals(username) && "demini123".equals(password)) {
-            Intent intent;
-            intent = new Intent(SignIn.this,Diary.class);
-            startActivity(intent);
+            Intent i;
+            i = new Intent(SignIn.this,Diary.class);
+            startActivity(i);
         } else {
             Toast.makeText(getBaseContext(), "wrong username or password", Toast.LENGTH_SHORT).show();
 

@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -17,24 +16,13 @@ import android.widget.Spinner;
 public class Diary extends FragmentActivity {
     Spinner sp;
     ImageView imageViewpicturegallary;
-    Button b;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.diary);
         final RelativeLayout llContainer=(RelativeLayout)findViewById(R.id.ll_container);
-
-        Button b=(Button)findViewById(R.id.buttonDate);
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                PickerDialogs pickerDialogs=new PickerDialogs();
-                pickerDialogs.show(getSupportFragmentManager(),"date_picker");
-            }
-        });
-
-
         imageViewpicturegallary=(ImageView)findViewById(R.id.imageViewGallery);
 
         imageViewpicturegallary.setOnClickListener(new View.OnClickListener() {
@@ -86,10 +74,10 @@ public class Diary extends FragmentActivity {
     }
 
 
-     /* public void setDate(View view){
+      public void setDate(View view){
         PickerDialogs pickerDialogs=new PickerDialogs();
         pickerDialogs.show(getSupportFragmentManager(),"date_picker");
-    }*/
+    }
 
 
 }

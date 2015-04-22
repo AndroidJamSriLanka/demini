@@ -1,5 +1,6 @@
 package com.example.android.sweetmemoriesdiary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Gravity;
@@ -27,12 +28,19 @@ public class SignUP extends ActionBarActivity {
 
             }
         });
+
+        Button b2=(Button)findViewById(R.id.buttonBack);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(SignUP.this,MainActivity.class);
+                startActivity(intent);
+
+            }
+        });
     }
 
-  /*  public void Register(View view){
-        Toast toast=Toast.makeText(getApplicationContext(),"you have successfully registered",
-                Toast.LENGTH_LONG);
-        toast.show();
-    }*/
+
 }
 

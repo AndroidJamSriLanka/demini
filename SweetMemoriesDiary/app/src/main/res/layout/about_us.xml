@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/home">
+    android:background="@drawable/kid_writing">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,7 +20,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/para1"
                 android:textSize="25sp"
-                android:textColor="#ff0d0201"
+                android:textColor="#FF3910FF"
                 android:id="@+id/textView6" />
         </LinearLayout>
 
@@ -30,10 +30,11 @@
             android:layout_height="fill_parent">
 
             <Button
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="100dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="200dp"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
+
                 android:background="@drawable/button_click"
                 android:textColor="#FF3910FF"
                 android:text="Back"

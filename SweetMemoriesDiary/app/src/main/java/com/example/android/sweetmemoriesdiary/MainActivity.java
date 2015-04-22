@@ -38,6 +38,17 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        Button b3=(Button)findViewById(R.id.buttAboutUs);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(intent);
+
+            }
+        });
+
 
     }
 
