@@ -18,5 +18,6 @@ I have implemented sign in and login activites. App is able to upload images fro
 Data sources
 
 https://developers.facebook.com/docs/android
+
 http://developer.android.com/reference/android/widget/ImageView.html
 
