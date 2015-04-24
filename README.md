@@ -1,14 +1,23 @@
-# demini
-Hi..!!!
+Sweet Memory Diary
 
-This is my project idea..
-problem - it is boring to keep a private diary & write on it. Sometimes our 
-special memories may forget to write on diary after coming back to home.
+What the app does?
 
-solution - develop an android diary book. Login will be done through a pin code. 
-App will be able to show the calendar. When user click on a date the new interface 
-will appear. This has the ability to upload pictures and videos, write paragraphs, 
-add friends from social media and sync. So when we start to write a name a 
-suggestion list of names with their image will display. Therefore the user can 
-easily update the diary about she was with them. The dates which the user have 
-updated with some memories will be highlighted in the calendar display.
+This app will able to get the calendar view and allow the user to pick a date. Then this will show an interface which can upload images from gallery and a space to write notes about the day. This will also provide facility to user to share their experience with others through facebook.
+
+
+APIs used:
+
+This app will going to use facebook api to share post through this app.
+
+
+What have you currently implemented?
+
+I have implemented sign in and login activites. App is able to upload images from gallery. Also app can change its theme color according to the selected theme from the drop down menu. Finally I got the calendar view and now user can pick a date from the calendar.
+
+
+Data sources
+
+https://developers.facebook.com/docs/android
+
+http://developer.android.com/reference/android/widget/ImageView.html
+
