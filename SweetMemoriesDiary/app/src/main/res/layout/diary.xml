@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/ll_container"
-
-    >
+    android:background="@drawable/home">
 
     <LinearLayout
         android:orientation="vertical"
@@ -15,26 +14,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <Button
+            <TextView
                 android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:textSize="20sp"
+                android:layout_height="55dp"
                 android:textColor="#FF3910FF"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:onClick="setDate"
-                android:background="@drawable/button_click"
-                android:text="Pick a date"
-                android:id="@+id/buttonDate" />
+                android:textSize="20sp"
+                android:text="Date"
+                android:id="@+id/textView6" />
 
             <EditText
-                android:layout_width="200dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:inputType="date"
                 android:ems="10"
-                android:id="@+id/editText" />
-
+                android:id="@+id/editTextDate"
+                android:hint="yy/mm/dd" />
         </LinearLayout>
 
         <LinearLayout
@@ -65,14 +59,44 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:id="@+id/imageViewGallery"
                 android:src="@drawable/gallery_icon" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:text="Save"
+                android:background="@drawable/button_click"
+                android:textColor="#FF3910FF"
+                android:onClick="Save"
+                android:id="@+id/buttonSave" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="100dp"
+
+                android:background="@drawable/button_click"
+                android:textColor="#FF3910FF"
+                android:text="See Memories"
+                android:id="@+id/buttonMemories" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.parse.Parse;
+import com.parse.ParseInstallation;
+
 
 public class MainActivity extends ActionBarActivity {
 
@@ -16,13 +19,18 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Parse.initialize(this, "AjyI8LvP7KNNKAQkBZX70hRIYOyL3bGQU1itlVTE", "4AgDqepdnj56twBb9Mzmw9pIJ44eSv5GM3yOTvNL");
+        ParseInstallation.getCurrentInstallation().saveInBackground();
 
         Button b=(Button)findViewById(R.id.butSignIn);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(MainActivity.this,SignIn.class);
+                /*Toast toast = Toast.makeText(getApplicationContext(), "You can login now", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();*/
+               // setContentView(R.layout.sign_in);
+                Intent intent = new Intent(MainActivity.this,SignIn.class);
                 startActivity(intent);
             }
         });
@@ -31,10 +39,13 @@ public class MainActivity extends ActionBarActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(MainActivity.this,SignUP.class);
-                startActivity(intent);
-
+                /*Toast toast=Toast.makeText(getApplicationContext(),"you can register now",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();*/
+                Intent intent2;
+                intent2 = new Intent(MainActivity.this,SignUP.class);
+                startActivity(intent2);
+              /*  setContentView(R.layout.sign_up);*/
             }
         });
 
@@ -42,12 +53,16 @@ public class MainActivity extends ActionBarActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(MainActivity.this,AboutUs.class);
-                startActivity(intent);
-
+                /*Toast toast=Toast.makeText(getApplicationContext(),"you can register now",Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER,0,0);
+                toast.show();*/
+                Intent intent2;
+                intent2 = new Intent(MainActivity.this,AboutUs.class);
+                startActivity(intent2);
+              /*  setContentView(R.layout.sign_up);*/
             }
         });
+
 
 
     }
@@ -75,7 +90,13 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+  /*  public void signup(View view){
+        Intent intent=new Intent(this,SignUP.class);
+        startActivity(intent);
+        setContentView(R.layout.sign_up);
 
+
+    }*/
 
 
 }

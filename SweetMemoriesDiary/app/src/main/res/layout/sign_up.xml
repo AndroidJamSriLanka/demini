@@ -26,7 +26,7 @@
                 android:layout_height="55dp"
                 android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/EditTextUserName"
+                android:id="@+id/editTextUsername"
                 android:hint="cerate a username" />
         </LinearLayout>
 
@@ -89,6 +89,7 @@
                 android:layout_marginLeft="30dp"
                 android:text="Register"
                 android:textColor="#FF3910FF"
+                android:onClick="Register"
 
                 android:background="@drawable/button_click"
                 android:id="@+id/ButtonRegister" />
@@ -102,6 +103,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginLeft="30dp"
                 android:background="@drawable/button_click"
+
                 android:id="@+id/buttonBack" />
         </LinearLayout>
 
